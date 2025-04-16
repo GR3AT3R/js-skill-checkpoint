@@ -11,3 +11,6 @@ const secondProductList = [
 ];
 
 // เริ่มเขียนโค้ดตรงนี้
+// Spread Operators
+const allProducts = [...firstProductList, ...secondProductList];
+console.log(allProducts);

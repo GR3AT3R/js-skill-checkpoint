@@ -2,6 +2,8 @@
 
 function filterInStockProducts(products) {
   // เริ่มเขียนโค้ดตรงนี้
+  // ใช้ Array Filter Function เพื่อกรองสินค้าที่มี quantity มากกว่า 0
+  return products.filter(product => product.quantity > 0);
 }
 
 // ตัวอย่างการใช้งาน
