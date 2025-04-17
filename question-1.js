@@ -15,7 +15,8 @@ inventory.orange = { price: 20, quantity: 300 };
 // 3. คำนวณมูลค่ารวมของสินค้าในสต็อกโดยใช้ Loop
 let totalValue = 0;
 for (const product in inventory) {
-  const { price, quantity } = inventory[product];
+  const price = inventory[product].price;
+  const quantity = inventory[product].quantity;
   totalValue += price * quantity;
 }
 
